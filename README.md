@@ -1,5 +1,7 @@
-# Oil Dispenser Store
+# NestCraft
 
-Customizable premium oil dispensers for your kitchen.
+Premium customizable kitchenware & home goods.
 
-Built with Next.js + Stripe.
+Starting with beautiful oil dispensers you can personalize.
+
+Built with Next.js + Stripe + Tailwind.
