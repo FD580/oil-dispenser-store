@@ -1,2 +1,5 @@
-# oil-dispenser-store
-E-commerce store for customizable oil dispensers
+# Oil Dispenser Store
+
+Customizable premium oil dispensers for your kitchen.
+
+Built with Next.js + Stripe.
