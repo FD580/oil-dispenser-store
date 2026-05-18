@@ -37,6 +37,20 @@
   transform: scale(1.05);
 }
 
+.backButton {
+  background-color: #667eea;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.backButton:hover {
+  background-color: #764ba2;
+}
+
 .productsSection {
   animation: fadeIn 0.5s ease;
 }
@@ -112,6 +126,122 @@
   transform: scale(1.05);
 }
 
+/* Customization Section */
+.customizationSection {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.3s ease;
+}
+
+.customizationContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.customizationContainer h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.customizationForm {
+  margin: 30px 0;
+}
+
+.formGroup {
+  margin-bottom: 30px;
+}
+
+.formGroup label {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.oilTypeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.oilTypeOption {
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.oilTypeOption:hover {
+  border-color: #667eea;
+  background-color: #f5f5ff;
+}
+
+.oilTypeSelected {
+  border-color: #667eea;
+  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.oilIcon {
+  font-size: 2rem;
+}
+
+.oilName {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+}
+
+.select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.select:hover {
+  border-color: #667eea;
+}
+
+.select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.addToCartButton {
+  width: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.addToCartButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Cart Section */
 .cartSection {
   background: white;
   border-radius: 10px;
@@ -136,6 +266,7 @@
   align-items: center;
   padding: 15px;
   border-bottom: 1px solid #eee;
+  gap: 20px;
 }
 
 .cartItem h3 {
@@ -145,6 +276,19 @@
 .cartItem p {
   color: #666;
   font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.customizationDetails {
+  background-color: #f9f9f9;
+  padding: 8px;
+  border-radius: 5px;
+  margin: 8px 0;
+  font-size: 0.85rem;
+}
+
+.customizationDetails p {
+  margin: 3px 0;
 }
 
 .quantityControl {
@@ -251,5 +395,9 @@
     flex-direction: column;
     gap: 15px;
     text-align: center;
+  }
+
+  .oilTypeGrid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   }
 }
